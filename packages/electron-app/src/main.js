@@ -1,8 +1,18 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const foo = require('unscoped-foo');
+import dotenv from 'dotenv';
+import foo from 'unscoped-foo';
 
-import handleSquirrelEvent from 'utils/handleSquirrelEvent';
+const isProduction = import.meta.env.MODE === "production";
+
+const serverEnvPath = isProduction
+? path.resolve(__dirname, ".env")
+: path.resolve(process.cwd(), ".env");
+console.log(`env path ${serverEnvPath}`);
+dotenv.config({ path: serverEnvPath });
+console.log(`env version ${process.env.version}`);
+
+// import handleSquirrelEvent from 'utils/handleSquirrelEvent';
 
 console.log(`Foo? ${foo()}`);
 
@@ -27,7 +37,7 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools();
 };
 
-if (!handleSquirrelEvent()) {
+// if (!handleSquirrelEvent()) {
   // This method will be called when Electron has finished
   // initialization and is ready to create browser windows.
   // Some APIs can only be used after this event occurs.
@@ -52,4 +62,4 @@ if (!handleSquirrelEvent()) {
 
   // In this file you can include the rest of your app's specific main process
   // code. You can also put them in separate files and import them here.
-}
+// }
