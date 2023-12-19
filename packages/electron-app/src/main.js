@@ -1,7 +1,10 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const foo = require('unscoped-foo');
 
 import handleSquirrelEvent from 'utils/handleSquirrelEvent';
+
+console.log(`Foo? ${foo()}`);
 
 const createWindow = () => {
   // Create the browser window.

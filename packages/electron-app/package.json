@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "test-package": "workspaces:*",
+    "unscoped-foo": "latest",
     "utils": "workspaces:*"
   }
 }
