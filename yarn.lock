@@ -624,6 +624,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lemur-scope/scoped-bar@npm:latest":
+  version: 0.0.1
+  resolution: "@lemur-scope/scoped-bar@npm:0.0.1"
+  checksum: af8d7b101137cc98bcb0b9458bba2ad21be900e8d00a02000258d5cf357e622b09e387a8de264410101c718e8415920bdbcc2b95a2caa56da476d98d8f352e01
+  languageName: node
+  linkType: hard
+
+"@lemur-scope/scoped-foo@npm:latest":
+  version: 0.0.1
+  resolution: "@lemur-scope/scoped-foo@npm:0.0.1"
+  checksum: 291af4dbf46bed310eeaaea8a46dda9c7bf8980d134ed8badbd56e596d7a39f6886d3a0fd1621e1f2f9f37320ca60e6ecd06e7e455cfdab5341748971bd49ccd
+  languageName: node
+  linkType: hard
+
 "@malept/cross-spawn-promise@npm:^1.0.0, @malept/cross-spawn-promise@npm:^1.1.0":
   version: 1.1.1
   resolution: "@malept/cross-spawn-promise@npm:1.1.1"
@@ -1584,11 +1598,12 @@ __metadata:
     "@electron-forge/maker-zip": "npm:^7.2.0"
     "@electron-forge/plugin-auto-unpack-natives": "npm:^7.2.0"
     "@electron-forge/plugin-vite": "npm:^7.2.0"
+    "@lemur-scope/scoped-bar": "npm:latest"
+    "@lemur-scope/scoped-foo": "npm:latest"
     dotenv: "npm:^16.3.1"
     electron: "npm:28.0.0"
     rimraf: "npm:5.0.5"
     test-package: "workspaces:*"
-    unscoped-foo: "npm:latest"
     utils: "workspaces:*"
   languageName: unknown
   linkType: soft
@@ -4775,13 +4790,6 @@ __metadata:
   version: 1.0.0
   resolution: "unpipe@npm:1.0.0"
   checksum: 193400255bd48968e5c5383730344fbb4fa114cdedfab26e329e50dd2d81b134244bb8a72c6ac1b10ab0281a58b363d06405632c9d49ca9dfd5e90cbd7d0f32c
-  languageName: node
-  linkType: hard
-
-"unscoped-foo@npm:latest":
-  version: 0.0.1
-  resolution: "unscoped-foo@npm:0.0.1"
-  checksum: 6799b900eeec6552061636de3f6fc1f1dafaac2613ad51c059a339e90a982f994948b0e2e8031067971c865718e3fead2616d3ccf7b16edaa9debed8c03bbf6b
   languageName: node
   linkType: hard
 
