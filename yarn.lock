@@ -1598,7 +1598,6 @@ __metadata:
     "@electron-forge/maker-zip": "npm:^7.2.0"
     "@electron-forge/plugin-auto-unpack-natives": "npm:^7.2.0"
     "@electron-forge/plugin-vite": "npm:^7.2.0"
-    "@lemur-scope/scoped-bar": "npm:latest"
     "@lemur-scope/scoped-foo": "npm:latest"
     dotenv: "npm:^16.3.1"
     electron: "npm:28.0.0"
@@ -4820,6 +4819,8 @@ __metadata:
 "utils@workspace:packages/utils, utils@workspaces:*":
   version: 0.0.0-use.local
   resolution: "utils@workspace:packages/utils"
+  dependencies:
+    "@lemur-scope/scoped-bar": "npm:latest"
   languageName: unknown
   linkType: soft
 

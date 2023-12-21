@@ -2,7 +2,6 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 import dotenv from 'dotenv';
 import foo from '@lemur-scope/scoped-foo';
-import bar from '@lemur-scope/scoped-bar';
 
 const isProduction = import.meta.env.MODE === "production";
 
@@ -16,7 +15,6 @@ console.log(`env version ${process.env.version}`);
 // import handleSquirrelEvent from 'utils/handleSquirrelEvent';
 
 console.log(`Foo? ${foo()}`);
-console.log(`Bar? ${bar()}`);
 
 const createWindow = () => {
   // Create the browser window.
